@@ -250,7 +250,7 @@ def display_results(folder_path):
         percentages.append(house_percentages)
     aggregated_percentages = pd.concat(percentages, axis=1).mean(axis=1)
 
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(8, 6))
     plt.plot(aggregated_percentages.index, aggregated_percentages.values, marker='o', linestyle='-', linewidth=2)
     plt.xlabel('Hour of the Day')
     plt.ylabel('Aggregated Occupied Probability')
